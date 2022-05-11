@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" BackgroundColor="#White"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MyCinemaAppp.MainPage">
+
+    <Grid RowDefinitions="Auto, *" Padding="30" RowSpacing="40">
+        <Label Text="Sinemam Cepte" TextColor="#00B7FC" FontSize="40" FontAttributes="Bold" HorizontalOptions="Center" />
+        <StackLayout Grid.Row="1" Spacing="15">
+            <Image Source="https://cdn.freelogodesign.org/files/025d73d30c9f455f931b34f32f7e3324/thumb/logo_200x200.png?v=0.png" WidthRequest="500" HeightRequest="100"/>
+            <Label TextColor="Black" Text="Kullanıcı Adı:"></Label>
+            <Entry x:Name="A"></Entry>
+            <Label TextColor="Black" Text="Şifre:"></Label>
+            <Entry x:Name="S"></Entry>
+            <Button Text="Admin Giris " Clicked="giriss"></Button>
+            <Button Text="Kullanici Giris" Clicked="kullanicigiriss"></Button>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
